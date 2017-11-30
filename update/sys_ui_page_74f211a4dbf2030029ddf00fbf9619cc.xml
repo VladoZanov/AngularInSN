@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>My first AngularJS application in ServiceNow</description>
+        <direct>false</direct>
+        <endpoint>x_89842_angular_ap_angular_app.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="x_89842_angular_ap.angular_app_client_lo.jsdbx"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>	
+	<div ng-app="angularapp" ng-controller="AngularAppCtrl as appctrl">
+		<input type="text" ng-model="myVar" placeholder="Enter some text here"></input>
+		<div class="jumbotron">
+			<h1 class="display-3">Hello world!</h1>
+			<hr class="m-y-2"/>
+			<p>{{myVar}}</p>
+		</div>
+		<button ng-click="clearTxt()" type="btn btn-primary">Clear Text</button>
+	</div>
+</j:jelly>]]></html>
+        <name>angular_app</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-29 14:26:41</sys_created_on>
+        <sys_id>74f211a4dbf2030029ddf00fbf9619cc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>angular_app</sys_name>
+        <sys_package display_value="Angular App" source="x_89842_angular_ap">e3b219a0dbf2030029ddf00fbf96197d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Angular App">e3b219a0dbf2030029ddf00fbf96197d</sys_scope>
+        <sys_update_name>sys_ui_page_74f211a4dbf2030029ddf00fbf9619cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-11-29 15:07:15</sys_updated_on>
+    </sys_ui_page>
+</record_update>
